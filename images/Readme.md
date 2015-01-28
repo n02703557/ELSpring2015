@@ -1,5 +1,5 @@
-Images Directory.
-All your images should go here.
-Images must be names so that they are self-explantory, as much as possible.
+#Images Directory.
+This directory contain images of all sorts used for the projects and documentation
+No copyright restriction whatsoever!
 
 

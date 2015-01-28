@@ -1,3 +1,4 @@
-Documentation Directory.
-All your documentation should go here.
+#Documentation Directory.
+
+This is where I will document all my work
 
