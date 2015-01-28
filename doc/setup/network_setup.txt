@@ -1,0 +1,31 @@
+I am connecting to school's network from my office. I followed the instructions the professor posted on Blackboard.
+I did not encouter any problems with setting up Wi-Fi connection.
+
+Here is my  /etc/network/interfaces file:
+
+auto lo
+
+iface lo inet loopback
+iface eth0 inet dhcp
+
+allow-hotplug wlan0
+iface wlan0 inet manual
+wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
+iface default inet dhcp
+
+Here is my /etc/wpa_supplicant/wpa_supplicant.conf file:
+
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+
+network={
+        ssid="NP Hawks WPA"
+        proto=RSN
+        key_mgmt=WPA-EAP
+        pairwise=CCMP
+        auth_alg=OPEN
+        eap=PEAP
+        identity="N01371322"
+        password="mySecret098"
+}
+
