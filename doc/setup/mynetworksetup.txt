@@ -1,5 +1,4 @@
-I am connecting to school's network from my office. I followed the instructions the professor posted on Blackboard.
-I did not encouter any problems with setting up Wi-Fi connection.
+I connected to my home wifi 2.4 ghz network without any problems
 
 Here is my  /etc/network/interfaces file:
 
@@ -19,13 +18,12 @@ ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
 
 network={
-        ssid="NP Hawks WPA"
+        ssid=“baseballhouse”
+	psk = “thisismypassword”
         proto=RSN
-        key_mgmt=WPA-EAP
+        key_mgmt=WPA-PSK
         pairwise=CCMP
         auth_alg=OPEN
-        eap=PEAP
-        identity="N01371322"
-        password="mySecret098"
+        
 }
 
